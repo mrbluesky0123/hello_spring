@@ -1,0 +1,296 @@
+[13:04:15.764:INFO :SpringBootTestContextBootstrapper:319] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.skcc.start.controller.CodeControllerTest], using SpringBootContextLoader
+[13:04:15.781:INFO :AbstractContextLoader:264] Could not detect default resource locations for test class [com.skcc.start.controller.CodeControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[13:04:15.782:INFO :AnnotationConfigContextLoaderUtils:81] Could not detect default configuration classes for test class [com.skcc.start.controller.CodeControllerTest]: CodeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[13:04:15.937:INFO :SpringBootTestContextBootstrapper:206] Found @SpringBootConfiguration com.skcc.start.AppMain for test class com.skcc.start.controller.CodeControllerTest
+[13:04:15.945:INFO :SpringBootTestContextBootstrapper:260] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[13:04:15.983:INFO :SpringBootTestContextBootstrapper:187] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30b7c004, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@79efed2d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2928854b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27ae2fd0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29176cc1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f177a4b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4278a03f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@147ed70f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@61dd025, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@124c278f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@15b204a1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77167fb7]
+[13:04:16.858:INFO :CodeControllerTest:48] Starting CodeControllerTest on DESKTOP-39JCQ7F with PID 2916 (started by goget in C:\Users\goget\spring-study\temp)
+[13:04:16.858:DEBUG:CodeControllerTest:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:04:16.859:INFO :CodeControllerTest:593] No active profile set, falling back to default profiles: default
+[13:04:16.886:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fb759d6: startup date [Tue Jan 16 13:04:16 KST 2018]; root of context hierarchy
+[13:04:17.425:DEBUG:logging:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[13:04:17.427:INFO :Version:30] HV000001: Hibernate Validator 5.3.6.Final
+[13:04:19.622:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 0 (http)
+[13:04:19.638:INFO :StandardService:179] Starting service [Tomcat]
+[13:04:19.640:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:04:19.860:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:04:19.860:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 2974 ms
+[13:04:20.208:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:04:20.215:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:04:20.215:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:04:20.216:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:04:20.216:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:04:20.216:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:04:20.216:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:04:20.216:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:04:20.807:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:04:20.832:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:04:20.974:INFO :Version:37] HHH000412: Hibernate Core {5.0.12.Final}
+[13:04:20.976:INFO :Environment:213] HHH000206: hibernate.properties not found
+[13:04:20.978:INFO :Environment:317] HHH000021: Bytecode provider name : javassist
+[13:04:21.045:INFO :Version:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:04:21.227:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:04:21.776:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:04:21.897:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:04:22.888:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fb759d6: startup date [Tue Jan 16 13:04:16 KST 2018]; root of context hierarchy
+[13:04:22.979:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:04:22.981:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:04:22.981:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:04:22.984:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:04:22.985:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:04:23.022:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:04:23.022:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:04:23.068:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:04:23.465:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:04:23.466:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.467:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.467:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.468:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:04:23.468:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.470:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:04:23.471:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:04:23.471:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.472:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.472:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:04:23.473:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.473:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.474:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:04:23.474:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.478:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:04:23.479:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:04:23.859:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-auto-1"]
+[13:04:23.879:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-auto-1"]
+[13:04:23.895:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:04:23.936:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 56343 (http)
+[13:04:23.944:INFO :CodeControllerTest:57] Started CodeControllerTest in 7.76 seconds (JVM running for 10.781)
+[13:04:24.138:INFO :[/]:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[13:04:24.139:INFO :DispatcherServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[13:04:24.170:INFO :DispatcherServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[13:04:24.232:INFO :Advice:64] start: getCodes
+[13:04:24.286:INFO :QueryTranslatorFactoryInitiator:47] HHH000397: Using ASTQueryTranslatorFactory
+[13:04:24.457:INFO :Advice:70] end: 227ms
+[13:04:24.727:INFO :AnnotationConfigEmbeddedWebApplicationContext:984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fb759d6: startup date [Tue Jan 16 13:04:16 KST 2018]; root of context hierarchy
+[13:04:24.739:INFO :LocalContainerEntityManagerFactoryBean:563] Closing JPA EntityManagerFactory for persistence unit 'default'
+[13:13:22.688:INFO :SpringBootTestContextBootstrapper:319] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.skcc.start.fwk.AdviceTest], using SpringBootContextLoader
+[13:13:22.711:INFO :AbstractContextLoader:264] Could not detect default resource locations for test class [com.skcc.start.fwk.AdviceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[13:13:22.715:INFO :AnnotationConfigContextLoaderUtils:81] Could not detect default configuration classes for test class [com.skcc.start.fwk.AdviceTest]: AdviceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[13:13:22.991:INFO :SpringBootTestContextBootstrapper:206] Found @SpringBootConfiguration com.skcc.start.AppMain for test class com.skcc.start.fwk.AdviceTest
+[13:13:23.000:INFO :SpringBootTestContextBootstrapper:260] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[13:13:23.032:INFO :SpringBootTestContextBootstrapper:187] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a04f701, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e91d63f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d4342c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2bbf180e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@163e4e87, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56de5251, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@419c5f1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12b0404f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@769e7ee8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5276e6b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71b1176b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6193932a]
+[13:13:23.548:INFO :AdviceTest:48] Starting AdviceTest on DESKTOP-39JCQ7F with PID 13960 (started by goget in C:\Users\goget\spring-study\temp)
+[13:13:23.549:DEBUG:AdviceTest:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:13:23.549:INFO :AdviceTest:593] No active profile set, falling back to default profiles: default
+[13:13:23.576:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:13:23 KST 2018]; root of context hierarchy
+[13:13:23.863:DEBUG:logging:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[13:13:23.865:INFO :Version:30] HV000001: Hibernate Validator 5.3.6.Final
+[13:13:26.036:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 0 (http)
+[13:13:26.049:INFO :StandardService:179] Starting service [Tomcat]
+[13:13:26.051:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:13:26.206:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:13:26.206:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 2630 ms
+[13:13:26.653:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:13:26.660:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:13:26.666:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:13:26.667:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:13:26.667:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:13:26.667:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:13:26.667:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:13:26.667:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:13:27.358:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:13:27.375:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:13:27.470:INFO :Version:37] HHH000412: Hibernate Core {5.0.12.Final}
+[13:13:27.471:INFO :Environment:213] HHH000206: hibernate.properties not found
+[13:13:27.472:INFO :Environment:317] HHH000021: Bytecode provider name : javassist
+[13:13:27.523:INFO :Version:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:13:27.724:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:13:28.222:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:13:28.381:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:13:29.454:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:13:23 KST 2018]; root of context hierarchy
+[13:13:29.549:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:13:29.551:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:13:29.552:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:13:29.554:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:13:29.554:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:13:29.596:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:13:29.596:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:13:29.646:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:13:30.014:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.015:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:13:30.016:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.016:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.017:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.018:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:13:30.019:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.021:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:13:30.022:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.024:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:13:30.025:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:13:30.044:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.046:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:13:30.046:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.049:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.050:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:13:30.051:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:13:30.361:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-auto-1"]
+[13:13:30.374:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-auto-1"]
+[13:13:30.385:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:13:30.405:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 56501 (http)
+[13:13:30.414:INFO :AdviceTest:57] Started AdviceTest in 7.232 seconds (JVM running for 8.938)
+[13:13:30.496:INFO :QueryTranslatorFactoryInitiator:47] HHH000397: Using ASTQueryTranslatorFactory
+[13:13:30.728:INFO :[/]:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[13:13:30.728:INFO :DispatcherServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[13:13:30.786:INFO :DispatcherServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+[13:13:30.921:INFO :AnnotationConfigEmbeddedWebApplicationContext:984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:13:23 KST 2018]; root of context hierarchy
+[13:13:30.947:INFO :LocalContainerEntityManagerFactoryBean:563] Closing JPA EntityManagerFactory for persistence unit 'default'
+[13:15:16.154:INFO :SpringBootTestContextBootstrapper:319] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.skcc.start.fwk.AdviceTest], using SpringBootContextLoader
+[13:15:16.163:INFO :AbstractContextLoader:264] Could not detect default resource locations for test class [com.skcc.start.fwk.AdviceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[13:15:16.165:INFO :AnnotationConfigContextLoaderUtils:81] Could not detect default configuration classes for test class [com.skcc.start.fwk.AdviceTest]: AdviceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[13:15:16.510:INFO :SpringBootTestContextBootstrapper:206] Found @SpringBootConfiguration com.skcc.start.AppMain for test class com.skcc.start.fwk.AdviceTest
+[13:15:16.546:INFO :SpringBootTestContextBootstrapper:260] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[13:15:16.628:INFO :SpringBootTestContextBootstrapper:187] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a04f701, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e91d63f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d4342c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2bbf180e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@163e4e87, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56de5251, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@419c5f1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12b0404f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@769e7ee8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5276e6b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71b1176b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6193932a]
+[13:15:17.258:INFO :AdviceTest:48] Starting AdviceTest on DESKTOP-39JCQ7F with PID 11608 (started by goget in C:\Users\goget\spring-study\temp)
+[13:15:17.259:DEBUG:AdviceTest:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:15:17.259:INFO :AdviceTest:593] No active profile set, falling back to default profiles: default
+[13:15:17.284:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:15:17 KST 2018]; root of context hierarchy
+[13:15:17.626:DEBUG:logging:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[13:15:17.628:INFO :Version:30] HV000001: Hibernate Validator 5.3.6.Final
+[13:15:19.683:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 0 (http)
+[13:15:19.695:INFO :StandardService:179] Starting service [Tomcat]
+[13:15:19.697:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:15:19.846:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:15:19.846:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 2563 ms
+[13:15:20.223:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:15:20.229:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:15:20.791:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:15:20.824:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:15:20.921:INFO :Version:37] HHH000412: Hibernate Core {5.0.12.Final}
+[13:15:20.923:INFO :Environment:213] HHH000206: hibernate.properties not found
+[13:15:20.924:INFO :Environment:317] HHH000021: Bytecode provider name : javassist
+[13:15:20.989:INFO :Version:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:15:21.186:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:15:21.675:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:15:21.787:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:15:22.820:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:15:17 KST 2018]; root of context hierarchy
+[13:15:22.912:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:15:22.913:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:15:22.914:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:15:22.916:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:15:22.917:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:15:22.966:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:15:22.966:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:15:23.019:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:15:23.450:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.451:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:15:23.451:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.452:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:15:23.452:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:15:23.453:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.453:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.455:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:15:23.455:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:15:23.455:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.456:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:15:23.457:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.457:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.458:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:15:23.458:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.459:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.459:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:15:23.723:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-auto-1"]
+[13:15:23.738:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-auto-1"]
+[13:15:23.755:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:15:23.781:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 56567 (http)
+[13:15:23.786:INFO :AdviceTest:57] Started AdviceTest in 6.997 seconds (JVM running for 8.555)
+[13:15:23.875:INFO :QueryTranslatorFactoryInitiator:47] HHH000397: Using ASTQueryTranslatorFactory
+[13:15:24.132:INFO :[/]:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[13:15:24.132:INFO :DispatcherServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[13:15:24.168:INFO :DispatcherServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+[13:15:24.323:INFO :AnnotationConfigEmbeddedWebApplicationContext:984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:15:17 KST 2018]; root of context hierarchy
+[13:15:24.327:INFO :LocalContainerEntityManagerFactoryBean:563] Closing JPA EntityManagerFactory for persistence unit 'default'
+[13:17:57.999:INFO :SpringBootTestContextBootstrapper:319] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.skcc.start.fwk.AdviceTest], using SpringBootContextLoader
+[13:17:58.008:INFO :AbstractContextLoader:264] Could not detect default resource locations for test class [com.skcc.start.fwk.AdviceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[13:17:58.009:INFO :AnnotationConfigContextLoaderUtils:81] Could not detect default configuration classes for test class [com.skcc.start.fwk.AdviceTest]: AdviceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[13:17:58.139:INFO :SpringBootTestContextBootstrapper:206] Found @SpringBootConfiguration com.skcc.start.AppMain for test class com.skcc.start.fwk.AdviceTest
+[13:17:58.147:INFO :SpringBootTestContextBootstrapper:260] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[13:17:58.177:INFO :SpringBootTestContextBootstrapper:187] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a04f701, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e91d63f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d4342c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2bbf180e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@163e4e87, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56de5251, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@419c5f1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12b0404f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@769e7ee8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5276e6b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71b1176b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6193932a]
+[13:17:58.759:INFO :AdviceTest:48] Starting AdviceTest on DESKTOP-39JCQ7F with PID 13044 (started by goget in C:\Users\goget\spring-study\temp)
+[13:17:58.759:DEBUG:AdviceTest:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:17:58.759:INFO :AdviceTest:593] No active profile set, falling back to default profiles: default
+[13:17:58.809:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:17:58 KST 2018]; root of context hierarchy
+[13:17:59.132:DEBUG:logging:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[13:17:59.134:INFO :Version:30] HV000001: Hibernate Validator 5.3.6.Final
+[13:18:01.731:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 0 (http)
+[13:18:01.750:INFO :StandardService:179] Starting service [Tomcat]
+[13:18:01.752:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:18:01.940:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:18:01.944:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 3135 ms
+[13:18:02.282:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:18:02.287:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:18:02.288:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:18:02.288:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:18:02.289:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:18:02.289:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:18:02.289:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:18:02.289:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:18:02.884:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:18:02.908:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:18:03.019:INFO :Version:37] HHH000412: Hibernate Core {5.0.12.Final}
+[13:18:03.036:INFO :Environment:213] HHH000206: hibernate.properties not found
+[13:18:03.040:INFO :Environment:317] HHH000021: Bytecode provider name : javassist
+[13:18:03.099:INFO :Version:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:18:03.244:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:18:03.822:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:18:04.017:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:18:05.040:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:17:58 KST 2018]; root of context hierarchy
+[13:18:05.157:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:18:05.159:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:18:05.160:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:18:05.161:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:18:05.162:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:18:05.206:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:18:05.207:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:18:05.271:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:18:05.652:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.653:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:18:05.654:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.655:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:18:05.655:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:18:05.656:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.657:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.659:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:18:05.659:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:18:05.660:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.661:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:18:05.661:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.661:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.662:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:18:05.663:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.663:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.664:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:18:05.911:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-auto-1"]
+[13:18:05.925:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-auto-1"]
+[13:18:05.936:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:18:05.957:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 56626 (http)
+[13:18:05.964:INFO :AdviceTest:57] Started AdviceTest in 7.66 seconds (JVM running for 8.739)
+[13:18:06.061:INFO :QueryTranslatorFactoryInitiator:47] HHH000397: Using ASTQueryTranslatorFactory
+[13:18:06.317:INFO :[/]:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[13:18:06.318:INFO :DispatcherServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[13:18:06.346:INFO :DispatcherServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+[13:18:06.378:INFO :Advice:64] start: getCodes
+[13:18:06.442:INFO :Advice:70] end: 65ms
+[13:18:06.558:INFO :AnnotationConfigEmbeddedWebApplicationContext:984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c05fddc: startup date [Tue Jan 16 13:17:58 KST 2018]; root of context hierarchy
+[13:18:06.561:INFO :LocalContainerEntityManagerFactoryBean:563] Closing JPA EntityManagerFactory for persistence unit 'default'

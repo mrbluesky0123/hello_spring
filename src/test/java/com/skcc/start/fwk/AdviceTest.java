@@ -1,5 +1,7 @@
-package com.skcc.start.controller;
+package com.skcc.start.fwk;
 
+
+import com.skcc.start.repository.jpa.TransactionRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,30 +13,32 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.number.OrderingComparison.greaterThan;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class CodeControllerTest {
+public class AdviceTest {
 
     @Autowired
     TestRestTemplate template;
 
-    @Test
-    public void 코드조회상태_정상() {
-        ResponseEntity<String> response   = template.getForEntity("/codes", String.class);
-        HttpStatus             statusCode = response.getStatusCode();
+    @Autowired
+    TransactionRepository repoTransaction;
 
+    @Test
+    public void 요청마다_거래건수_증가(){
+    /*
+        long countBefore = repoTransaction.count();
+        ResponseEntity<String> response   = template.getForEntity("/codes", String.class);
+        HttpStatus statusCode = response.getStatusCode();
         System.out.println("statusCode = " + statusCode);
         assertThat(statusCode, equalTo(HttpStatus.OK));
 
-    }
-
-    //@Test
-    public void 코드조회결과값비교_정상() {
-        ResponseEntity<String> response   = template.getForEntity("/codes", String.class);
-        HttpStatus             statusCode = response.getStatusCode();
-        String body = response.getBody();
-        assertThat(body, equalTo("good"));
+        long countAfter = repoTransaction.count();
+        System.out.println("countBefore = " + countBefore);
+        System.out.println("countAfter = " + countAfter);
+        assertThat(countAfter, greaterThan(countBefore));
+        */
     }
 
 }

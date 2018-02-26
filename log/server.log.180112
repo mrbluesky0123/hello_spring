@@ -1,0 +1,696 @@
+[13:54:27.777:INFO :AppMain:48] Starting AppMain on DESKTOP-39JCQ7F with PID 11028 (C:\Users\goget\spring-study\temp\out\production\classes started by goget in C:\Users\goget\spring-study\temp)
+[13:54:27.777:DEBUG:AppMain:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:54:27.777:INFO :AppMain:593] No active profile set, falling back to default profiles: default
+[13:54:27.779:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51e78e9f: startup date [Fri Jan 12 13:54:27 KST 2018]; root of context hierarchy
+[13:54:29.986:INFO :AppMain:48] Starting AppMain on DESKTOP-39JCQ7F with PID 6328 (C:\Users\goget\spring-study\temp\out\production\classes started by goget in C:\Users\goget\spring-study\temp)
+[13:54:29.989:DEBUG:AppMain:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:54:29.990:INFO :AppMain:593] No active profile set, falling back to default profiles: default
+[13:54:30.093:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4a08fc: startup date [Fri Jan 12 13:54:30 KST 2018]; root of context hierarchy
+[13:54:30.377:DEBUG:logging:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[13:54:30.378:INFO :Version:30] HV000001: Hibernate Validator 5.3.6.Final
+[13:54:34.250:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 8080 (http)
+[13:54:34.266:INFO :StandardService:179] Starting service [Tomcat]
+[13:54:34.268:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:54:34.441:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:54:34.441:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 4349 ms
+[13:54:34.843:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:54:34.848:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:54:34.849:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:54:34.849:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:54:34.850:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:54:34.850:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:54:34.850:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:54:34.850:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:54:35.476:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:54:35.500:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:54:35.619:INFO :Version:37] HHH000412: Hibernate Core {5.0.12.Final}
+[13:54:35.621:INFO :Environment:213] HHH000206: hibernate.properties not found
+[13:54:35.624:INFO :Environment:317] HHH000021: Bytecode provider name : javassist
+[13:54:35.698:INFO :Version:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:54:35.889:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:54:36.404:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:54:36.561:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:54:37.565:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4a08fc: startup date [Fri Jan 12 13:54:30 KST 2018]; root of context hierarchy
+[13:54:37.672:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:54:37.673:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:54:37.674:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:54:37.676:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:54:37.677:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:54:37.722:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:54:37.722:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:54:37.786:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:54:38.292:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:54:38.293:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:54:38.294:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.296:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:54:38.296:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.298:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.299:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.300:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:54:38.301:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.301:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.302:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.304:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:54:38.305:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:54:38.305:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.306:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.306:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:54:38.307:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:54:38.658:INFO :AnnotationMBeanExporter:431] Registering beans for JMX exposure on startup
+[13:54:38.663:INFO :EndpointMBeanExporter:431] Registering beans for JMX exposure on startup
+[13:54:38.668:INFO :DefaultLifecycleProcessor:343] Starting beans in phase 0
+[13:54:38.670:INFO :EndpointMBeanExporter:678] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+[13:54:38.684:INFO :EndpointMBeanExporter:678] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+[13:54:38.694:INFO :EndpointMBeanExporter:678] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+[13:54:38.698:INFO :EndpointMBeanExporter:678] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+[13:54:38.700:INFO :EndpointMBeanExporter:678] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+[13:54:38.702:INFO :EndpointMBeanExporter:678] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+[13:54:38.704:INFO :EndpointMBeanExporter:678] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+[13:54:38.709:INFO :EndpointMBeanExporter:678] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+[13:54:38.714:INFO :EndpointMBeanExporter:678] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+[13:54:38.718:INFO :EndpointMBeanExporter:678] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+[13:54:38.720:INFO :EndpointMBeanExporter:678] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+[13:54:38.721:INFO :EndpointMBeanExporter:678] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+[13:54:38.741:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-8080"]
+[13:54:38.751:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-8080"]
+[13:54:38.761:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:54:38.782:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 8080 (http)
+[13:54:38.786:INFO :AppMain:57] Started AppMain in 9.394 seconds (JVM running for 10.224)
+[13:54:38.787:DEBUG:AppMain:20] name: actuatorMetricReader
+[13:54:38.787:DEBUG:AppMain:20] name: advice
+[13:54:38.787:DEBUG:AppMain:20] name: appMain
+[13:54:38.788:DEBUG:AppMain:20] name: applicationContextIdFilter
+[13:54:38.788:DEBUG:AppMain:20] name: auditEventMvcEndpoint
+[13:54:38.788:DEBUG:AppMain:20] name: auditEventRepository
+[13:54:38.788:DEBUG:AppMain:20] name: auditEventsEndpoint
+[13:54:38.788:DEBUG:AppMain:20] name: auditListener
+[13:54:38.788:DEBUG:AppMain:20] name: autoConfigurationReportEndpoint
+[13:54:38.788:DEBUG:AppMain:20] name: baseConfig
+[13:54:38.788:DEBUG:AppMain:20] name: basicErrorController
+[13:54:38.788:DEBUG:AppMain:20] name: beanNameHandlerMapping
+[13:54:38.788:DEBUG:AppMain:20] name: beanNameViewResolver
+[13:54:38.788:DEBUG:AppMain:20] name: beansEndpoint
+[13:54:38.788:DEBUG:AppMain:20] name: characterEncodingFilter
+[13:54:38.788:DEBUG:AppMain:20] name: classPathFileSystemWatcher
+[13:54:38.788:DEBUG:AppMain:20] name: classPathRestartStrategy
+[13:54:38.789:DEBUG:AppMain:20] name: codeController
+[13:54:38.789:DEBUG:AppMain:20] name: codeRepository
+[13:54:38.789:DEBUG:AppMain:20] name: codeService
+[13:54:38.789:DEBUG:AppMain:20] name: commons
+[13:54:38.789:DEBUG:AppMain:20] name: configurationPropertiesReportEndpoint
+[13:54:38.789:DEBUG:AppMain:20] name: conventionErrorViewResolver
+[13:54:38.789:DEBUG:AppMain:20] name: counterBuffers
+[13:54:38.789:DEBUG:AppMain:20] name: counterService
+[13:54:38.790:DEBUG:AppMain:20] name: dataSourceInitializedPublisher
+[13:54:38.790:DEBUG:AppMain:20] name: dataSourceInitializer
+[13:54:38.790:DEBUG:AppMain:20] name: dataSourceInitializerPostProcessor
+[13:54:38.790:DEBUG:AppMain:20] name: dataSourcePublicMetrics
+[13:54:38.790:DEBUG:AppMain:20] name: dbHealthIndicator
+[13:54:38.790:DEBUG:AppMain:20] name: defaultServletHandlerMapping
+[13:54:38.790:DEBUG:AppMain:20] name: defaultValidator
+[13:54:38.790:DEBUG:AppMain:20] name: defaultViewResolver
+[13:54:38.790:DEBUG:AppMain:20] name: diskSpaceHealthIndicator
+[13:54:38.791:DEBUG:AppMain:20] name: diskSpaceHealthIndicatorProperties
+[13:54:38.791:DEBUG:AppMain:20] name: dispatcherServlet
+[13:54:38.791:DEBUG:AppMain:20] name: dispatcherServletRegistration
+[13:54:38.791:DEBUG:AppMain:20] name: dumpEndpoint
+[13:54:38.791:DEBUG:AppMain:20] name: duplicateServerPropertiesDetector
+[13:54:38.791:DEBUG:AppMain:20] name: emBeanDefinitionRegistrarPostProcessor
+[13:54:38.791:DEBUG:AppMain:20] name: embeddedServletContainerCustomizerBeanPostProcessor
+[13:54:38.791:DEBUG:AppMain:20] name: endpointHandlerMapping
+[13:54:38.791:DEBUG:AppMain:20] name: endpointMBeanExporter
+[13:54:38.792:DEBUG:AppMain:20] name: endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties
+[13:54:38.792:DEBUG:AppMain:20] name: endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties
+[13:54:38.792:DEBUG:AppMain:20] name: endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties
+[13:54:38.792:DEBUG:AppMain:20] name: endpoints.jmx-org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties
+[13:54:38.792:DEBUG:AppMain:20] name: endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties
+[13:54:38.792:DEBUG:AppMain:20] name: entityManagerFactory
+[13:54:38.792:DEBUG:AppMain:20] name: entityManagerFactoryBuilder
+[13:54:38.792:DEBUG:AppMain:20] name: envInfoContributor
+[13:54:38.792:DEBUG:AppMain:20] name: environmentEndpoint
+[13:54:38.792:DEBUG:AppMain:20] name: environmentMvcEndpoint
+[13:54:38.792:DEBUG:AppMain:20] name: error
+[13:54:38.792:DEBUG:AppMain:20] name: errorAttributes
+[13:54:38.793:DEBUG:AppMain:20] name: errorPageCustomizer
+[13:54:38.793:DEBUG:AppMain:20] name: errorPageRegistrarBeanPostProcessor
+[13:54:38.793:DEBUG:AppMain:20] name: faviconHandlerMapping
+[13:54:38.793:DEBUG:AppMain:20] name: faviconRequestHandler
+[13:54:38.793:DEBUG:AppMain:20] name: fileSystemWatcherFactory
+[13:54:38.793:DEBUG:AppMain:20] name: gaugeBuffers
+[13:54:38.793:DEBUG:AppMain:20] name: gaugeService
+[13:54:38.793:DEBUG:AppMain:20] name: handlerExceptionResolver
+[13:54:38.793:DEBUG:AppMain:20] name: hateoasObjenesisCacheDisabler
+[13:54:38.793:DEBUG:AppMain:20] name: healthAggregator
+[13:54:38.793:DEBUG:AppMain:20] name: healthEndpoint
+[13:54:38.793:DEBUG:AppMain:20] name: healthMvcEndpoint
+[13:54:38.794:DEBUG:AppMain:20] name: heapdumpMvcEndpoint
+[13:54:38.794:DEBUG:AppMain:20] name: hiddenHttpMethodFilter
+[13:54:38.794:DEBUG:AppMain:20] name: httpPutFormContentFilter
+[13:54:38.794:DEBUG:AppMain:20] name: httpRequestHandlerAdapter
+[13:54:38.794:DEBUG:AppMain:20] name: infoEndpoint
+[13:54:38.794:DEBUG:AppMain:20] name: jacksonGeoModule
+[13:54:38.794:DEBUG:AppMain:20] name: jacksonObjectMapper
+[13:54:38.794:DEBUG:AppMain:20] name: jacksonObjectMapperBuilder
+[13:54:38.794:DEBUG:AppMain:20] name: jdbcTemplate
+[13:54:38.794:DEBUG:AppMain:20] name: jpaContext
+[13:54:38.794:DEBUG:AppMain:20] name: jpaMappingContext
+[13:54:38.794:DEBUG:AppMain:20] name: jpaVendorAdapter
+[13:54:38.794:DEBUG:AppMain:20] name: jsonComponentModule
+[13:54:38.795:DEBUG:AppMain:20] name: localeCharsetMappingsCustomizer
+[13:54:38.795:DEBUG:AppMain:20] name: loggersEndpoint
+[13:54:38.795:DEBUG:AppMain:20] name: loggersMvcEndpoint
+[13:54:38.795:DEBUG:AppMain:20] name: management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties
+[13:54:38.795:DEBUG:AppMain:20] name: management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties
+[13:54:38.795:DEBUG:AppMain:20] name: management.trace-org.springframework.boot.actuate.trace.TraceProperties
+[13:54:38.795:DEBUG:AppMain:20] name: managementContextResolver
+[13:54:38.796:DEBUG:AppMain:20] name: managementServerProperties
+[13:54:38.796:DEBUG:AppMain:20] name: managementServletContext
+[13:54:38.796:DEBUG:AppMain:20] name: mappingJackson2HttpMessageConverter
+[13:54:38.796:DEBUG:AppMain:20] name: mariaPrimaryConfig
+[13:54:38.796:DEBUG:AppMain:20] name: mariaPrimaryDataSource
+[13:54:38.796:DEBUG:AppMain:20] name: mbeanExporter
+[13:54:38.796:DEBUG:AppMain:20] name: mbeanServer
+[13:54:38.796:DEBUG:AppMain:20] name: messageConverters
+[13:54:38.796:DEBUG:AppMain:20] name: methodValidationPostProcessor
+[13:54:38.796:DEBUG:AppMain:20] name: metricReaderPublicMetrics
+[13:54:38.797:DEBUG:AppMain:20] name: metricWritersMetricExporter
+[13:54:38.797:DEBUG:AppMain:20] name: metricsEndpoint
+[13:54:38.797:DEBUG:AppMain:20] name: metricsFilter
+[13:54:38.797:DEBUG:AppMain:20] name: metricsMvcEndpoint
+[13:54:38.797:DEBUG:AppMain:20] name: multipartConfigElement
+[13:54:38.797:DEBUG:AppMain:20] name: multipartResolver
+[13:54:38.797:DEBUG:AppMain:20] name: mvcContentNegotiationManager
+[13:54:38.797:DEBUG:AppMain:20] name: mvcConversionService
+[13:54:38.797:DEBUG:AppMain:20] name: mvcEndpoints
+[13:54:38.797:DEBUG:AppMain:20] name: mvcHandlerMappingIntrospector
+[13:54:38.797:DEBUG:AppMain:20] name: mvcPathMatcher
+[13:54:38.797:DEBUG:AppMain:20] name: mvcResourceUrlProvider
+[13:54:38.797:DEBUG:AppMain:20] name: mvcUriComponentsContributor
+[13:54:38.798:DEBUG:AppMain:20] name: mvcUrlPathHelper
+[13:54:38.798:DEBUG:AppMain:20] name: mvcValidator
+[13:54:38.798:DEBUG:AppMain:20] name: mvcViewResolver
+[13:54:38.798:DEBUG:AppMain:20] name: myTestController
+[13:54:38.798:DEBUG:AppMain:20] name: myTestService
+[13:54:38.798:DEBUG:AppMain:20] name: namedParameterJdbcTemplate
+[13:54:38.798:DEBUG:AppMain:20] name: objectNamingStrategy
+[13:54:38.798:DEBUG:AppMain:20] name: openEntityManagerInViewInterceptor
+[13:54:38.798:DEBUG:AppMain:20] name: org.springframework.aop.config.internalAutoProxyCreator
+[13:54:38.798:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration
+[13:54:38.798:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration
+[13:54:38.798:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration
+[13:54:38.798:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DataSourcesHealthIndicatorConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration
+[13:54:38.799:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$DataSourceMetricsConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$TomcatMetricsConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.AutoConfigurationPackages
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.aop.AopAutoConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration
+[13:54:38.800:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.domain.EntityScanPackages
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+[13:54:38.801:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration
+[13:54:38.802:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration
+[13:54:38.803:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalCommonAnnotationProcessor
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+[13:54:38.804:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalPersistenceAnnotationProcessor
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalRequiredAnnotationProcessor
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalScheduledAnnotationProcessor
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.context.event.internalEventListenerFactory
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.context.event.internalEventListenerProcessor
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.data.web.config.SpringDataJacksonConfiguration
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.data.web.config.SpringDataWebConfiguration
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.orm.jpa.SharedEntityManagerCreator#0
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.scheduling.annotation.SchedulingConfiguration
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.transaction.config.internalTransactionAdvisor
+[13:54:38.805:DEBUG:AppMain:20] name: org.springframework.transaction.config.internalTransactionalEventListenerFactory
+[13:54:38.805:DEBUG:AppMain:20] name: pageableResolver
+[13:54:38.805:DEBUG:AppMain:20] name: persistenceExceptionTranslationPostProcessor
+[13:54:38.805:DEBUG:AppMain:20] name: platformTransactionManagerCustomizers
+[13:54:38.805:DEBUG:AppMain:20] name: preserveErrorControllerTargetClassPostProcessor
+[13:54:38.806:DEBUG:AppMain:20] name: propertySourcesPlaceholderConfigurer
+[13:54:38.806:DEBUG:AppMain:20] name: requestContextFilter
+[13:54:38.806:DEBUG:AppMain:20] name: requestMappingEndpoint
+[13:54:38.806:DEBUG:AppMain:20] name: requestMappingHandlerAdapter
+[13:54:38.806:DEBUG:AppMain:20] name: requestMappingHandlerMapping
+[13:54:38.806:DEBUG:AppMain:20] name: resourceHandlerMapping
+[13:54:38.806:DEBUG:AppMain:20] name: restTemplateBuilder
+[13:54:38.806:DEBUG:AppMain:20] name: serverProperties
+[13:54:38.806:DEBUG:AppMain:20] name: shutdownEndpoint
+[13:54:38.806:DEBUG:AppMain:20] name: simpleControllerHandlerAdapter
+[13:54:38.806:DEBUG:AppMain:20] name: sortResolver
+[13:54:38.806:DEBUG:AppMain:20] name: spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+[13:54:38.806:DEBUG:AppMain:20] name: spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties
+[13:54:38.807:DEBUG:AppMain:20] name: spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties
+[13:54:38.807:DEBUG:AppMain:20] name: spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties
+[13:54:38.807:DEBUG:AppMain:20] name: spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties
+[13:54:38.807:DEBUG:AppMain:20] name: spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties
+[13:54:38.807:DEBUG:AppMain:20] name: spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties
+[13:54:38.807:DEBUG:AppMain:20] name: standardJacksonObjectMapperBuilderCustomizer
+[13:54:38.807:DEBUG:AppMain:20] name: stringHttpMessageConverter
+[13:54:38.807:DEBUG:AppMain:20] name: systemPublicMetrics
+[13:54:38.807:DEBUG:AppMain:20] name: tomcatEmbeddedServletContainerFactory
+[13:54:38.807:DEBUG:AppMain:20] name: tomcatPoolDataSourceMetadataProvider
+[13:54:38.807:DEBUG:AppMain:20] name: tomcatPublicMetrics
+[13:54:38.807:DEBUG:AppMain:20] name: traceEndpoint
+[13:54:38.807:DEBUG:AppMain:20] name: traceRepository
+[13:54:38.807:DEBUG:AppMain:20] name: transactionAttributeSource
+[13:54:38.807:DEBUG:AppMain:20] name: transactionInterceptor
+[13:54:38.807:DEBUG:AppMain:20] name: transactionManager
+[13:54:38.807:DEBUG:AppMain:20] name: transactionRepository
+[13:54:38.808:DEBUG:AppMain:20] name: transactionTemplate
+[13:54:38.808:DEBUG:AppMain:20] name: viewControllerHandlerMapping
+[13:54:38.808:DEBUG:AppMain:20] name: viewResolver
+[13:54:38.808:DEBUG:AppMain:20] name: webRequestLoggingFilter
+[13:54:38.808:DEBUG:AppMain:20] name: websocketContainerCustomizer
+[13:54:38.808:DEBUG:AppMain:20] name: welcomePageHandlerMapping
+[13:54:54.049:INFO :[/]:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[13:54:54.050:INFO :DispatcherServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[13:54:54.110:INFO :DispatcherServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+[13:54:54.148:INFO :Advice:64] start: getCodes
+[13:54:54.196:INFO :QueryTranslatorFactoryInitiator:47] HHH000397: Using ASTQueryTranslatorFactory
+[13:54:54.366:INFO :Advice:70] end: 220ms
+[13:54:58.151:INFO :Advice:64] start: getCodes
+[13:54:58.174:INFO :Advice:70] end: 23ms
+[13:55:29.525:INFO :Advice:64] start: getCodes
+[13:55:29.548:INFO :Advice:70] end: 23ms
+    [13:56:42.042:INFO :Advice:64] start: getCodes
+[13:56:42.065:INFO :Advice:70] end: 23ms
+[13:56:46.287:INFO :Advice:64] start: getCodes
+[13:56:46.309:INFO :Advice:70] end: 22ms
+[13:57:22.687:INFO :AnnotationConfigEmbeddedWebApplicationContext:984] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a4a08fc: startup date [Fri Jan 12 13:54:30 KST 2018]; root of context hierarchy
+[13:57:22.690:INFO :DefaultLifecycleProcessor:358] Stopping beans in phase 0
+[13:57:22.692:INFO :EndpointMBeanExporter:449] Unregistering JMX-exposed beans on shutdown
+[13:57:22.692:INFO :EndpointMBeanExporter:241] Unregistering JMX-exposed beans
+[13:57:22.693:INFO :AnnotationMBeanExporter:449] Unregistering JMX-exposed beans on shutdown
+[13:57:22.695:INFO :LocalContainerEntityManagerFactoryBean:563] Closing JPA EntityManagerFactory for persistence unit 'default'
+[13:57:25.884:INFO :AppMain:48] Starting AppMain on DESKTOP-39JCQ7F with PID 6328 (C:\Users\goget\spring-study\temp\out\production\classes started by goget in C:\Users\goget\spring-study\temp)
+[13:57:25.885:DEBUG:AppMain:51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[13:57:25.885:INFO :AppMain:593] No active profile set, falling back to default profiles: default
+[13:57:25.891:INFO :AnnotationConfigEmbeddedWebApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f9f550a: startup date [Fri Jan 12 13:57:25 KST 2018]; root of context hierarchy
+[13:57:27.385:INFO :TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 8080 (http)
+[13:57:27.385:INFO :StandardService:179] Starting service [Tomcat]
+[13:57:27.386:INFO :StandardEngine:179] Starting Servlet Engine: Apache Tomcat/8.5.23
+[13:57:27.412:INFO :[/]:179] Initializing Spring embedded WebApplicationContext
+[13:57:27.413:INFO :ContextLoader:276] Root WebApplicationContext: initialization completed in 1522 ms
+[13:57:27.510:INFO :ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[13:57:27.511:INFO :FilterRegistrationBean:258] Mapping filter: 'metricsFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[13:57:27.512:INFO :FilterRegistrationBean:258] Mapping filter: 'applicationContextIdFilter' to: [/*]
+[13:57:27.741:INFO :LocalContainerEntityManagerFactoryBean:356] Building JPA container EntityManagerFactory for persistence unit 'default'
+[13:57:27.742:INFO :LogHelper:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[13:57:27.758:INFO :Dialect:156] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:57:27.798:INFO :SchemaUpdate:105] HHH000228: Running hbm2ddl schema update
+[13:57:27.863:INFO :LocalContainerEntityManagerFactoryBean:392] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[13:57:28.262:INFO :RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f9f550a: startup date [Fri Jan 12 13:57:25 KST 2018]; root of context hierarchy
+[13:57:28.276:INFO :RequestMappingHandlerMapping:543] Mapped "{[/codes],methods=[GET]}" onto public java.util.Collection<com.skcc.start.entity.common.Code> com.skcc.start.part.common.controller.CodeController.getCodes()
+[13:57:28.277:INFO :RequestMappingHandlerMapping:543] Mapped "{[/{codeName}],methods=[POST]}" onto public void com.skcc.start.part.common.controller.CodeController.postCode(java.lang.String,com.skcc.start.entity.common.Code)
+[13:57:28.277:INFO :RequestMappingHandlerMapping:543] Mapped "{[/mytest],methods=[GET]}" onto public java.lang.String com.skcc.start.part.common.controller.MyTestController.getMyTest()
+[13:57:28.278:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[13:57:28.279:INFO :RequestMappingHandlerMapping:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[13:57:28.300:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:57:28.300:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:57:28.324:INFO :SimpleUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[13:57:28.485:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[13:57:28.486:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[13:57:28.486:INFO :EndpointHandlerMapping:543] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.487:INFO :EndpointHandlerMapping:543] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[13:57:28.488:INFO :EndpointHandlerMapping:543] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.489:INFO :EndpointHandlerMapping:543] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.490:INFO :EndpointHandlerMapping:543] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.490:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[13:57:28.491:INFO :EndpointHandlerMapping:543] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.491:INFO :EndpointHandlerMapping:543] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[13:57:28.492:INFO :EndpointHandlerMapping:543] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.492:INFO :EndpointHandlerMapping:543] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.492:INFO :EndpointHandlerMapping:543] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[13:57:28.493:INFO :EndpointHandlerMapping:543] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.494:INFO :EndpointHandlerMapping:543] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.494:INFO :EndpointHandlerMapping:543] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[13:57:28.495:INFO :EndpointHandlerMapping:543] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[13:57:28.621:INFO :AnnotationMBeanExporter:431] Registering beans for JMX exposure on startup
+[13:57:28.624:INFO :EndpointMBeanExporter:431] Registering beans for JMX exposure on startup
+[13:57:28.626:INFO :DefaultLifecycleProcessor:343] Starting beans in phase 0
+[13:57:28.627:INFO :EndpointMBeanExporter:678] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+[13:57:28.631:INFO :EndpointMBeanExporter:678] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+[13:57:28.633:INFO :EndpointMBeanExporter:678] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+[13:57:28.634:INFO :EndpointMBeanExporter:678] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+[13:57:28.636:INFO :EndpointMBeanExporter:678] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+[13:57:28.638:INFO :EndpointMBeanExporter:678] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+[13:57:28.640:INFO :EndpointMBeanExporter:678] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+[13:57:28.644:INFO :EndpointMBeanExporter:678] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+[13:57:28.645:INFO :EndpointMBeanExporter:678] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+[13:57:28.647:INFO :EndpointMBeanExporter:678] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+[13:57:28.649:INFO :EndpointMBeanExporter:678] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+[13:57:28.650:INFO :EndpointMBeanExporter:678] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+[13:57:28.655:INFO :Http11NioProtocol:179] Initializing ProtocolHandler ["http-nio-8080"]
+[13:57:28.655:INFO :Http11NioProtocol:179] Starting ProtocolHandler ["http-nio-8080"]
+[13:57:28.656:INFO :NioSelectorPool:179] Using a shared selector for servlet write/read
+[13:57:28.662:INFO :TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 8080 (http)
+[13:57:28.664:INFO :AppMain:57] Started AppMain in 2.91 seconds (JVM running for 180.101)
+[13:57:28.665:DEBUG:AppMain:20] name: actuatorMetricReader
+[13:57:28.665:DEBUG:AppMain:20] name: advice
+[13:57:28.665:DEBUG:AppMain:20] name: appMain
+[13:57:28.665:DEBUG:AppMain:20] name: applicationContextIdFilter
+[13:57:28.665:DEBUG:AppMain:20] name: auditEventMvcEndpoint
+[13:57:28.665:DEBUG:AppMain:20] name: auditEventRepository
+[13:57:28.665:DEBUG:AppMain:20] name: auditEventsEndpoint
+[13:57:28.665:DEBUG:AppMain:20] name: auditListener
+[13:57:28.665:DEBUG:AppMain:20] name: autoConfigurationReportEndpoint
+[13:57:28.665:DEBUG:AppMain:20] name: baseConfig
+[13:57:28.665:DEBUG:AppMain:20] name: basicErrorController
+[13:57:28.665:DEBUG:AppMain:20] name: beanNameHandlerMapping
+[13:57:28.666:DEBUG:AppMain:20] name: beanNameViewResolver
+[13:57:28.666:DEBUG:AppMain:20] name: beansEndpoint
+[13:57:28.666:DEBUG:AppMain:20] name: characterEncodingFilter
+[13:57:28.666:DEBUG:AppMain:20] name: classPathFileSystemWatcher
+[13:57:28.666:DEBUG:AppMain:20] name: classPathRestartStrategy
+[13:57:28.666:DEBUG:AppMain:20] name: codeController
+[13:57:28.666:DEBUG:AppMain:20] name: codeRepository
+[13:57:28.666:DEBUG:AppMain:20] name: codeService
+[13:57:28.666:DEBUG:AppMain:20] name: commons
+[13:57:28.666:DEBUG:AppMain:20] name: configurationPropertiesReportEndpoint
+[13:57:28.666:DEBUG:AppMain:20] name: conventionErrorViewResolver
+[13:57:28.666:DEBUG:AppMain:20] name: counterBuffers
+[13:57:28.666:DEBUG:AppMain:20] name: counterService
+[13:57:28.666:DEBUG:AppMain:20] name: dataSourceInitializedPublisher
+[13:57:28.666:DEBUG:AppMain:20] name: dataSourceInitializer
+[13:57:28.666:DEBUG:AppMain:20] name: dataSourceInitializerPostProcessor
+[13:57:28.666:DEBUG:AppMain:20] name: dataSourcePublicMetrics
+[13:57:28.667:DEBUG:AppMain:20] name: dbHealthIndicator
+[13:57:28.667:DEBUG:AppMain:20] name: defaultServletHandlerMapping
+[13:57:28.667:DEBUG:AppMain:20] name: defaultValidator
+[13:57:28.667:DEBUG:AppMain:20] name: defaultViewResolver
+[13:57:28.667:DEBUG:AppMain:20] name: diskSpaceHealthIndicator
+[13:57:28.667:DEBUG:AppMain:20] name: diskSpaceHealthIndicatorProperties
+[13:57:28.667:DEBUG:AppMain:20] name: dispatcherServlet
+[13:57:28.667:DEBUG:AppMain:20] name: dispatcherServletRegistration
+[13:57:28.667:DEBUG:AppMain:20] name: dumpEndpoint
+[13:57:28.667:DEBUG:AppMain:20] name: duplicateServerPropertiesDetector
+[13:57:28.668:DEBUG:AppMain:20] name: emBeanDefinitionRegistrarPostProcessor
+[13:57:28.668:DEBUG:AppMain:20] name: embeddedServletContainerCustomizerBeanPostProcessor
+[13:57:28.668:DEBUG:AppMain:20] name: endpointHandlerMapping
+[13:57:28.668:DEBUG:AppMain:20] name: endpointMBeanExporter
+[13:57:28.668:DEBUG:AppMain:20] name: endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties
+[13:57:28.668:DEBUG:AppMain:20] name: endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties
+[13:57:28.668:DEBUG:AppMain:20] name: endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties
+[13:57:28.668:DEBUG:AppMain:20] name: endpoints.jmx-org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties
+[13:57:28.668:DEBUG:AppMain:20] name: endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties
+[13:57:28.668:DEBUG:AppMain:20] name: entityManagerFactory
+[13:57:28.668:DEBUG:AppMain:20] name: entityManagerFactoryBuilder
+[13:57:28.668:DEBUG:AppMain:20] name: envInfoContributor
+[13:57:28.668:DEBUG:AppMain:20] name: environmentEndpoint
+[13:57:28.668:DEBUG:AppMain:20] name: environmentMvcEndpoint
+[13:57:28.668:DEBUG:AppMain:20] name: error
+[13:57:28.669:DEBUG:AppMain:20] name: errorAttributes
+[13:57:28.669:DEBUG:AppMain:20] name: errorPageCustomizer
+[13:57:28.669:DEBUG:AppMain:20] name: errorPageRegistrarBeanPostProcessor
+[13:57:28.669:DEBUG:AppMain:20] name: faviconHandlerMapping
+[13:57:28.669:DEBUG:AppMain:20] name: faviconRequestHandler
+[13:57:28.669:DEBUG:AppMain:20] name: fileSystemWatcherFactory
+[13:57:28.669:DEBUG:AppMain:20] name: gaugeBuffers
+[13:57:28.669:DEBUG:AppMain:20] name: gaugeService
+[13:57:28.669:DEBUG:AppMain:20] name: handlerExceptionResolver
+[13:57:28.670:DEBUG:AppMain:20] name: hateoasObjenesisCacheDisabler
+[13:57:28.670:DEBUG:AppMain:20] name: healthAggregator
+[13:57:28.670:DEBUG:AppMain:20] name: healthEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: healthMvcEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: heapdumpMvcEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: hiddenHttpMethodFilter
+[13:57:28.670:DEBUG:AppMain:20] name: httpPutFormContentFilter
+[13:57:28.670:DEBUG:AppMain:20] name: httpRequestHandlerAdapter
+[13:57:28.670:DEBUG:AppMain:20] name: infoEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: jacksonGeoModule
+[13:57:28.670:DEBUG:AppMain:20] name: jacksonObjectMapper
+[13:57:28.670:DEBUG:AppMain:20] name: jacksonObjectMapperBuilder
+[13:57:28.670:DEBUG:AppMain:20] name: jdbcTemplate
+[13:57:28.670:DEBUG:AppMain:20] name: jpaContext
+[13:57:28.670:DEBUG:AppMain:20] name: jpaMappingContext
+[13:57:28.670:DEBUG:AppMain:20] name: jpaVendorAdapter
+[13:57:28.670:DEBUG:AppMain:20] name: jsonComponentModule
+[13:57:28.670:DEBUG:AppMain:20] name: localeCharsetMappingsCustomizer
+[13:57:28.670:DEBUG:AppMain:20] name: loggersEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: loggersMvcEndpoint
+[13:57:28.670:DEBUG:AppMain:20] name: management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties
+[13:57:28.670:DEBUG:AppMain:20] name: management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties
+[13:57:28.671:DEBUG:AppMain:20] name: management.trace-org.springframework.boot.actuate.trace.TraceProperties
+[13:57:28.671:DEBUG:AppMain:20] name: managementContextResolver
+[13:57:28.671:DEBUG:AppMain:20] name: managementServerProperties
+[13:57:28.671:DEBUG:AppMain:20] name: managementServletContext
+[13:57:28.671:DEBUG:AppMain:20] name: mappingJackson2HttpMessageConverter
+[13:57:28.671:DEBUG:AppMain:20] name: mariaPrimaryConfig
+[13:57:28.672:DEBUG:AppMain:20] name: mariaPrimaryDataSource
+[13:57:28.672:DEBUG:AppMain:20] name: mbeanExporter
+[13:57:28.672:DEBUG:AppMain:20] name: mbeanServer
+[13:57:28.672:DEBUG:AppMain:20] name: messageConverters
+[13:57:28.672:DEBUG:AppMain:20] name: methodValidationPostProcessor
+[13:57:28.672:DEBUG:AppMain:20] name: metricReaderPublicMetrics
+[13:57:28.672:DEBUG:AppMain:20] name: metricWritersMetricExporter
+[13:57:28.672:DEBUG:AppMain:20] name: metricsEndpoint
+[13:57:28.672:DEBUG:AppMain:20] name: metricsFilter
+[13:57:28.672:DEBUG:AppMain:20] name: metricsMvcEndpoint
+[13:57:28.672:DEBUG:AppMain:20] name: multipartConfigElement
+[13:57:28.672:DEBUG:AppMain:20] name: multipartResolver
+[13:57:28.672:DEBUG:AppMain:20] name: mvcContentNegotiationManager
+[13:57:28.672:DEBUG:AppMain:20] name: mvcConversionService
+[13:57:28.672:DEBUG:AppMain:20] name: mvcEndpoints
+[13:57:28.672:DEBUG:AppMain:20] name: mvcHandlerMappingIntrospector
+[13:57:28.672:DEBUG:AppMain:20] name: mvcPathMatcher
+[13:57:28.672:DEBUG:AppMain:20] name: mvcResourceUrlProvider
+[13:57:28.672:DEBUG:AppMain:20] name: mvcUriComponentsContributor
+[13:57:28.672:DEBUG:AppMain:20] name: mvcUrlPathHelper
+[13:57:28.672:DEBUG:AppMain:20] name: mvcValidator
+[13:57:28.672:DEBUG:AppMain:20] name: mvcViewResolver
+[13:57:28.673:DEBUG:AppMain:20] name: myTestController
+[13:57:28.673:DEBUG:AppMain:20] name: myTestService
+[13:57:28.673:DEBUG:AppMain:20] name: namedParameterJdbcTemplate
+[13:57:28.673:DEBUG:AppMain:20] name: objectNamingStrategy
+[13:57:28.673:DEBUG:AppMain:20] name: openEntityManagerInViewInterceptor
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.aop.config.internalAutoProxyCreator
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DataSourcesHealthIndicatorConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration
+[13:57:28.674:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$DataSourceMetricsConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$TomcatMetricsConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.AutoConfigurationPackages
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.aop.AopAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.domain.EntityScanPackages
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+[13:57:28.675:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration
+[13:57:28.677:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration
+[13:57:28.678:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+[13:57:28.680:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration
+[13:57:28.680:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration
+[13:57:28.681:DEBUG:AppMain:20] name: org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalCommonAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalPersistenceAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalRequiredAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.annotation.internalScheduledAnnotationProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.event.internalEventListenerFactory
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.context.event.internalEventListenerProcessor
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.data.web.config.SpringDataJacksonConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.data.web.config.SpringDataWebConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.orm.jpa.SharedEntityManagerCreator#0
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.scheduling.annotation.SchedulingConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+[13:57:28.682:DEBUG:AppMain:20] name: org.springframework.transaction.config.internalTransactionAdvisor
+[13:57:28.683:DEBUG:AppMain:20] name: org.springframework.transaction.config.internalTransactionalEventListenerFactory
+[13:57:28.683:DEBUG:AppMain:20] name: pageableResolver
+[13:57:28.683:DEBUG:AppMain:20] name: persistenceExceptionTranslationPostProcessor
+[13:57:28.683:DEBUG:AppMain:20] name: platformTransactionManagerCustomizers
+[13:57:28.683:DEBUG:AppMain:20] name: preserveErrorControllerTargetClassPostProcessor
+[13:57:28.683:DEBUG:AppMain:20] name: propertySourcesPlaceholderConfigurer
+[13:57:28.683:DEBUG:AppMain:20] name: requestContextFilter
+[13:57:28.683:DEBUG:AppMain:20] name: requestMappingEndpoint
+[13:57:28.683:DEBUG:AppMain:20] name: requestMappingHandlerAdapter
+[13:57:28.683:DEBUG:AppMain:20] name: requestMappingHandlerMapping
+[13:57:28.683:DEBUG:AppMain:20] name: resourceHandlerMapping
+[13:57:28.683:DEBUG:AppMain:20] name: restTemplateBuilder
+[13:57:28.683:DEBUG:AppMain:20] name: serverProperties
+[13:57:28.683:DEBUG:AppMain:20] name: shutdownEndpoint
+[13:57:28.683:DEBUG:AppMain:20] name: simpleControllerHandlerAdapter
+[13:57:28.683:DEBUG:AppMain:20] name: sortResolver
+[13:57:28.683:DEBUG:AppMain:20] name: spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties
+[13:57:28.684:DEBUG:AppMain:20] name: spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties
+[13:57:28.684:DEBUG:AppMain:20] name: standardJacksonObjectMapperBuilderCustomizer
+[13:57:28.684:DEBUG:AppMain:20] name: stringHttpMessageConverter
+[13:57:28.684:DEBUG:AppMain:20] name: systemPublicMetrics
+[13:57:28.686:DEBUG:AppMain:20] name: tomcatEmbeddedServletContainerFactory
+[13:57:28.686:DEBUG:AppMain:20] name: tomcatPoolDataSourceMetadataProvider
+[13:57:28.686:DEBUG:AppMain:20] name: tomcatPublicMetrics
+[13:57:28.686:DEBUG:AppMain:20] name: traceEndpoint
+[13:57:28.686:DEBUG:AppMain:20] name: traceRepository
+[13:57:28.686:DEBUG:AppMain:20] name: transactionAttributeSource
+[13:57:28.686:DEBUG:AppMain:20] name: transactionInterceptor
+[13:57:28.686:DEBUG:AppMain:20] name: transactionManager
+[13:57:28.686:DEBUG:AppMain:20] name: transactionRepository
+[13:57:28.688:DEBUG:AppMain:20] name: transactionTemplate
+[13:57:28.688:DEBUG:AppMain:20] name: viewControllerHandlerMapping
+[13:57:28.688:DEBUG:AppMain:20] name: viewResolver
+[13:57:28.688:DEBUG:AppMain:20] name: webRequestLoggingFilter
+[13:57:28.688:DEBUG:AppMain:20] name: websocketContainerCustomizer
+[13:57:28.694:DEBUG:AppMain:20] name: welcomePageHandlerMapping

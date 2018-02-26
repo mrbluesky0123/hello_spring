@@ -1,0 +1,23 @@
+# maria
+maria:
+ primary:
+  driverClassName: "org.mariadb.jdbc.Driver"
+  url: "jdbc:mariadb://n1.egstep.com:3306/test3"
+  userName: "test3"
+  password: "test3"
+  initialSize: 10
+  maxActive: 10
+  maxIdle: 10
+  minIdle: 10
+  maxWait: 3000
+
+spring:
+ devtools:
+  livereload:
+   enabled: false
+ jpa:
+  show-sql: true
+  generate-ddl: true
+  hibernate:
+   dll-auto: create
+   dialect: org.hibernate.dialect.MySQLDialect

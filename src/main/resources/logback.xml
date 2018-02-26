@@ -1,0 +1,68 @@
+<configuration scan="true" scanPeriod="3 seconds">
+
+    <!-- property -->
+    <property name="logHome" value="log/"/>
+    <timestamp key="bySecond" datePattern="yyyyMMddHHmmss"/>
+
+
+    <!-- appenders -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level) [%cyan(%20c{20}.%M):%L] %msg%n</pattern>
+            <!--<pattern>%magenta(%d{HH:mm:ss.SSS}) %highlight(%-5level) [%-21thread] [%cyan(%c{0}.%M):%L] %msg%n</pattern>-->
+            <!--<pattern>%magenta(%d{HH:mm:ss.SSS}) %highlight(%-5level) [%cyan(%c{0}.%M):%L] %msg%n</pattern>-->
+        </encoder>
+    </appender>
+
+    <!-- File Appender - Server Log -->
+    <appender name="appenderServer" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logHome}server.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logHome}server.log.%d{yyMMdd}</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%d{HH:mm:ss.SSS}:%-5p:%c{0}:%L] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Service Appender -->
+    <appender name="appenderService" class="ch.qos.logback.classic.sift.SiftingAppender">
+
+        <!-- MDC Value -->
+        <discriminator>
+            <key>logServiceFileName</key>
+            <defaultValue>service</defaultValue>
+        </discriminator>
+
+        <sift>
+            <!-- A standard RollingFileAppender, the log file is based on 'logFileName' at runtime  -->
+            <appender name="${logServiceFileName}" class="ch.qos.logback.core.FileAppender">
+                <file>${logHome}service/${logServiceFileName}</file>
+                <encoder>
+                    <charset>UTF-8</charset>
+                    <pattern>[%d{HH:mm:ss.sss}:%p:%c:%L:%thread] %m%n</pattern>
+                </encoder>
+            </appender>
+        </sift>
+
+    </appender>
+
+
+    <!-- 3rd party log level -->
+    <logger name="org.hibernate" level="info" additivity="true"/>
+    <logger name="org.springframework" level="info"/>
+
+
+    <!-- logger -->
+    <logger name="eachService" level="debug" additivity="true">
+        <appender-ref ref="appenderService"/>
+    </logger>
+
+
+    <!-- root -->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="appenderServer"/>
+    </root>
+</configuration>
